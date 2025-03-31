@@ -1,0 +1,41 @@
+[0.007s] Invoking command in '/home/timi/ros2_ws/build/jetracer_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/timi/ros2_ws/src/jetracer_description -DCMAKE_INSTALL_PREFIX=/home/timi/ros2_ws/install/jetracer_description
+[0.091s] -- The C compiler identification is GNU 11.4.0
+[0.142s] -- The CXX compiler identification is GNU 11.4.0
+[0.151s] -- Detecting C compiler ABI info
+[0.216s] -- Detecting C compiler ABI info - done
+[0.221s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.221s] -- Detecting C compile features
+[0.222s] -- Detecting C compile features - done
+[0.224s] -- Detecting CXX compiler ABI info
+[0.283s] -- Detecting CXX compiler ABI info - done
+[0.288s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.288s] -- Detecting CXX compile features
+[0.288s] -- Detecting CXX compile features - done
+[0.297s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.403s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.515s] -- Configuring done
+[0.516s] -- Generating done
+[0.517s] -- Build files have been written to: /home/timi/ros2_ws/build/jetracer_description
+[0.519s] Invoked command in '/home/timi/ros2_ws/build/jetracer_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/timi/ros2_ws/src/jetracer_description -DCMAKE_INSTALL_PREFIX=/home/timi/ros2_ws/install/jetracer_description
+[0.520s] Invoking command in '/home/timi/ros2_ws/build/jetracer_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/timi/ros2_ws/build/jetracer_description -- -j20 -l20
+[0.547s] Invoked command in '/home/timi/ros2_ws/build/jetracer_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/timi/ros2_ws/build/jetracer_description -- -j20 -l20
+[0.553s] Invoking command in '/home/timi/ros2_ws/build/jetracer_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/timi/ros2_ws/build/jetracer_description
+[0.558s] -- Install configuration: ""
+[0.558s] -- Installing: /home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/urdf
+[0.558s] -- Installing: /home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/urdf/jetracer.urdf
+[0.558s] -- Installing: /home/timi/ros2_ws/install/jetracer_description/share/ament_index/resource_index/package_run_dependencies/jetracer_description
+[0.558s] -- Installing: /home/timi/ros2_ws/install/jetracer_description/share/ament_index/resource_index/parent_prefix_path/jetracer_description
+[0.558s] -- Installing: /home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/environment/ament_prefix_path.sh
+[0.558s] -- Installing: /home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/environment/ament_prefix_path.dsv
+[0.558s] -- Installing: /home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/environment/path.sh
+[0.559s] -- Installing: /home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/environment/path.dsv
+[0.559s] -- Installing: /home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/local_setup.bash
+[0.559s] -- Installing: /home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/local_setup.sh
+[0.559s] -- Installing: /home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/local_setup.zsh
+[0.559s] -- Installing: /home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/local_setup.dsv
+[0.559s] -- Installing: /home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/package.dsv
+[0.559s] -- Installing: /home/timi/ros2_ws/install/jetracer_description/share/ament_index/resource_index/packages/jetracer_description
+[0.559s] -- Installing: /home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/cmake/jetracer_descriptionConfig.cmake
+[0.559s] -- Installing: /home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/cmake/jetracer_descriptionConfig-version.cmake
+[0.560s] -- Installing: /home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/package.xml
+[0.561s] Invoked command in '/home/timi/ros2_ws/build/jetracer_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/timi/ros2_ws/build/jetracer_description
