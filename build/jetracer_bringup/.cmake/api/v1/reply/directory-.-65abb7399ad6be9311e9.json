@@ -36,13 +36,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 12,
+				"line" : 11,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 0,
-				"line" : 19,
+				"line" : 15,
 				"parent" : 0
 			},
 			{
@@ -226,10 +226,9 @@
 		{
 			"backtrace" : 1,
 			"component" : "Unspecified",
-			"destination" : "share/jetracer_description",
+			"destination" : "share/jetracer_bringup/",
 			"paths" : 
 			[
-				"urdf",
 				"launch"
 			],
 			"type" : "directory"
@@ -240,7 +239,7 @@
 			"destination" : "share/ament_index/resource_index/package_run_dependencies",
 			"paths" : 
 			[
-				"/home/timi/ros2_ws/build/jetracer_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/jetracer_description"
+				"/home/timi/ros2_ws/build/jetracer_bringup/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/jetracer_bringup"
 			],
 			"type" : "file"
 		},
@@ -250,14 +249,14 @@
 			"destination" : "share/ament_index/resource_index/parent_prefix_path",
 			"paths" : 
 			[
-				"/home/timi/ros2_ws/build/jetracer_description/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/jetracer_description"
+				"/home/timi/ros2_ws/build/jetracer_bringup/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/jetracer_bringup"
 			],
 			"type" : "file"
 		},
 		{
 			"backtrace" : 15,
 			"component" : "Unspecified",
-			"destination" : "share/jetracer_description/environment",
+			"destination" : "share/jetracer_bringup/environment",
 			"paths" : 
 			[
 				"/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh"
@@ -267,17 +266,17 @@
 		{
 			"backtrace" : 16,
 			"component" : "Unspecified",
-			"destination" : "share/jetracer_description/environment",
+			"destination" : "share/jetracer_bringup/environment",
 			"paths" : 
 			[
-				"/home/timi/ros2_ws/build/jetracer_description/ament_cmake_environment_hooks/ament_prefix_path.dsv"
+				"/home/timi/ros2_ws/build/jetracer_bringup/ament_cmake_environment_hooks/ament_prefix_path.dsv"
 			],
 			"type" : "file"
 		},
 		{
 			"backtrace" : 17,
 			"component" : "Unspecified",
-			"destination" : "share/jetracer_description/environment",
+			"destination" : "share/jetracer_bringup/environment",
 			"paths" : 
 			[
 				"/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh"
@@ -287,60 +286,60 @@
 		{
 			"backtrace" : 18,
 			"component" : "Unspecified",
-			"destination" : "share/jetracer_description/environment",
+			"destination" : "share/jetracer_bringup/environment",
 			"paths" : 
 			[
-				"/home/timi/ros2_ws/build/jetracer_description/ament_cmake_environment_hooks/path.dsv"
+				"/home/timi/ros2_ws/build/jetracer_bringup/ament_cmake_environment_hooks/path.dsv"
 			],
 			"type" : "file"
 		},
 		{
 			"backtrace" : 20,
 			"component" : "Unspecified",
-			"destination" : "share/jetracer_description",
+			"destination" : "share/jetracer_bringup",
 			"paths" : 
 			[
-				"/home/timi/ros2_ws/build/jetracer_description/ament_cmake_environment_hooks/local_setup.bash"
+				"/home/timi/ros2_ws/build/jetracer_bringup/ament_cmake_environment_hooks/local_setup.bash"
 			],
 			"type" : "file"
 		},
 		{
 			"backtrace" : 21,
 			"component" : "Unspecified",
-			"destination" : "share/jetracer_description",
+			"destination" : "share/jetracer_bringup",
 			"paths" : 
 			[
-				"/home/timi/ros2_ws/build/jetracer_description/ament_cmake_environment_hooks/local_setup.sh"
+				"/home/timi/ros2_ws/build/jetracer_bringup/ament_cmake_environment_hooks/local_setup.sh"
 			],
 			"type" : "file"
 		},
 		{
 			"backtrace" : 22,
 			"component" : "Unspecified",
-			"destination" : "share/jetracer_description",
+			"destination" : "share/jetracer_bringup",
 			"paths" : 
 			[
-				"/home/timi/ros2_ws/build/jetracer_description/ament_cmake_environment_hooks/local_setup.zsh"
+				"/home/timi/ros2_ws/build/jetracer_bringup/ament_cmake_environment_hooks/local_setup.zsh"
 			],
 			"type" : "file"
 		},
 		{
 			"backtrace" : 23,
 			"component" : "Unspecified",
-			"destination" : "share/jetracer_description",
+			"destination" : "share/jetracer_bringup",
 			"paths" : 
 			[
-				"/home/timi/ros2_ws/build/jetracer_description/ament_cmake_environment_hooks/local_setup.dsv"
+				"/home/timi/ros2_ws/build/jetracer_bringup/ament_cmake_environment_hooks/local_setup.dsv"
 			],
 			"type" : "file"
 		},
 		{
 			"backtrace" : 24,
 			"component" : "Unspecified",
-			"destination" : "share/jetracer_description",
+			"destination" : "share/jetracer_bringup",
 			"paths" : 
 			[
-				"/home/timi/ros2_ws/build/jetracer_description/ament_cmake_environment_hooks/package.dsv"
+				"/home/timi/ros2_ws/build/jetracer_bringup/ament_cmake_environment_hooks/package.dsv"
 			],
 			"type" : "file"
 		},
@@ -350,25 +349,25 @@
 			"destination" : "share/ament_index/resource_index/packages",
 			"paths" : 
 			[
-				"/home/timi/ros2_ws/build/jetracer_description/ament_cmake_index/share/ament_index/resource_index/packages/jetracer_description"
+				"/home/timi/ros2_ws/build/jetracer_bringup/ament_cmake_index/share/ament_index/resource_index/packages/jetracer_bringup"
 			],
 			"type" : "file"
 		},
 		{
 			"backtrace" : 31,
 			"component" : "Unspecified",
-			"destination" : "share/jetracer_description/cmake",
+			"destination" : "share/jetracer_bringup/cmake",
 			"paths" : 
 			[
-				"/home/timi/ros2_ws/build/jetracer_description/ament_cmake_core/jetracer_descriptionConfig.cmake",
-				"/home/timi/ros2_ws/build/jetracer_description/ament_cmake_core/jetracer_descriptionConfig-version.cmake"
+				"/home/timi/ros2_ws/build/jetracer_bringup/ament_cmake_core/jetracer_bringupConfig.cmake",
+				"/home/timi/ros2_ws/build/jetracer_bringup/ament_cmake_core/jetracer_bringupConfig-version.cmake"
 			],
 			"type" : "file"
 		},
 		{
 			"backtrace" : 32,
 			"component" : "Unspecified",
-			"destination" : "share/jetracer_description",
+			"destination" : "share/jetracer_bringup",
 			"paths" : 
 			[
 				"package.xml"
