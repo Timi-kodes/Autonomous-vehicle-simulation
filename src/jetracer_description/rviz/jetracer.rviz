@@ -6,7 +6,7 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
-        - /RobotModel1/Status1
+        - /RobotModel1
         - /RobotModel1/Mass Properties1
         - /RobotModel1/Description Topic1
         - /TF1/Frames1
@@ -73,16 +73,23 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
+        base_left_wheel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         base_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
+        base_right_wheel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         base_scan:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
         camera:
           Alpha: 1
           Show Axes: false
@@ -92,25 +99,13 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
         front_right_wheel:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
-        rear_left_wheel:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        rear_right_wheel:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
       Mass Properties:
-        Inertia: false
-        Mass: false
+        Inertia: true
+        Mass: true
       Name: RobotModel
       TF Prefix: ""
       Update Interval: 0
@@ -123,7 +118,11 @@ Visualization Manager:
         All Enabled: true
         base_footprint:
           Value: true
+        base_left_wheel:
+          Value: true
         base_link:
+          Value: true
+        base_right_wheel:
           Value: true
         base_scan:
           Value: true
@@ -135,10 +134,6 @@ Visualization Manager:
           Value: true
         odom:
           Value: true
-        rear_left_wheel:
-          Value: true
-        rear_right_wheel:
-          Value: true
       Marker Scale: 1
       Name: TF
       Show Arrows: true
@@ -148,6 +143,10 @@ Visualization Manager:
         odom:
           base_footprint:
             base_link:
+              base_left_wheel:
+                {}
+              base_right_wheel:
+                {}
               base_scan:
                 {}
               camera:
@@ -155,10 +154,6 @@ Visualization Manager:
               front_left_wheel:
                 {}
               front_right_wheel:
-                {}
-              rear_left_wheel:
-                {}
-              rear_right_wheel:
                 {}
       Update Interval: 0
       Value: true
@@ -208,7 +203,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 0.8561939597129822
+      Distance: 2.11027193069458
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -223,10 +218,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.33039817214012146
+      Pitch: 0.5903978943824768
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 0.43039876222610474
+      Yaw: 5.948585033416748
     Saved: ~
 Window Geometry:
   Displays:

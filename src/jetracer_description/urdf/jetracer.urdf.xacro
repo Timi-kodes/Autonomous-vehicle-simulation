@@ -6,14 +6,18 @@
     <xacro:property name="base_height" value="0.12"/>
     <xacro:property name="wheel_radius" value="0.0325"/>
     <xacro:property name="wheel_length" value="0.025"/>
-
     
+    <xacro:include filename= "common_properties.xacro"/>
+    <xacro:include filename="jetracer_gazebo.xacro"/>  
+    
+
     <xacro:macro name="wheel" params="position side sign">
         <joint name="${position}_${side}_wheel_joint" type="continuous">
-            <parent link="base_link"/>
+            <parent link="base_link" />
             <child link="${position}_${side}_wheel"/>
             <origin xyz="${ base_length/3.5 if position=='front' else -0.1 } ${sign * base_width * 0.63} -0.06" rpy="0 0 0"/>
             <axis xyz="0 1 0"/>
+            
         </joint>
         <link name="${position}_${side}_wheel">
             <visual>
@@ -28,41 +32,15 @@
                     <cylinder radius="${wheel_radius}" length="${wheel_length}"/>
                 </geometry>
                 <origin xyz="0 0 0" rpy="${pi/2.0} 0 0"/>
+            
             </collision>
-            <xacro:cylinder_inertial m="0.3" radius="${wheel_radius}" length="${wheel_length}" o_xyz="0 0 0" o_rpy="${pi/2.0} 0 0"/>
+            <xacro:cylinder_inertial m="0.3" r="${wheel_radius}" l="${wheel_length}" o_xyz="0 0 0" o_rpy="${pi/2.0} 0 0"/>
         </link>
     </xacro:macro>
 
+  
 
-    <xacro:macro name="wheel_link" params="position side sign">
-        <joint name="${position}_${side}_wheel_joint" type="fixed">
-            <parent link="base_link"/>
-            <child link="${position}_${side}_wheel"/>
-            <origin xyz="${ base_length/3.5 if position=='front' else -0.1 } ${sign * base_width * 0.63} -0.06" rpy="0 0 0"/>
-            <axis xyz="0 1 0"/>
-        </joint>
-        <link name="${position}_${side}_wheel">
-            <visual>
-                <geometry>
-                    <cylinder radius="${wheel_radius}" length="${wheel_length}"/>
-                </geometry>
-                <origin xyz="0 0 0" rpy="${pi/2.0} 0 0"/>
-                <material name="blue"/>
-            </visual>
-            <collision>
-                <geometry>
-                    <cylinder radius="${wheel_radius}" length="${wheel_length}"/>
-                </geometry>
-                <origin xyz="0 0 0" rpy="${pi/2.0} 0 0"/>
-            </collision>
-            <xacro:cylinder_inertial m="0.3" radius="${wheel_radius}" length="${wheel_length}" o_xyz="0 0 0" o_rpy="${pi/2.0} 0 0"/>
-        </link>
-    </xacro:macro>
-
-    <xacro:include filename= "common_properties.xacro"/>
-    <xacro:include filename="jetracer_gazebo.xacro"/>    
-
-    <link name="base_footprint"/>
+    <link name="base_footprint" />
 
     <joint name="base_joint" type="fixed">
         <parent link="base_footprint"/>
@@ -96,18 +74,18 @@
     <link name="base_scan">
         <visual>
             <geometry>
-                <cylinder radius="0.05" length="0.04"/>
+                <cylinder r="0.05" l="0.04"/>
             </geometry>
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <material name="grey" />
         </visual>
         <collision>
             <geometry>
-                <cylinder radius="0.05" length="0.04"/>
+                <cylinder r="0.05" l="0.04"/>
             </geometry>
             <origin xyz="0 0 0" rpy="0 0 0"/>
         </collision>
-        <xacro:cylinder_inertial m="0.1" radius="0.05" length="0.04" o_xyz="0 0 0" o_rpy="0 0 0"/>
+        <xacro:cylinder_inertial m="0.1" r="0.05" l="0.04" o_xyz="0 0 0" o_rpy="0 0 0"/>
     </link>
     
 
@@ -147,5 +125,5 @@
     
     
     <xacro:wheel position="base" side="right" sign="-1"/>
-    
+
 </robot>
