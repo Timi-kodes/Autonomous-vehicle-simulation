@@ -1,2 +1,1 @@
-source;share/jetracer_bringup/environment/ament_prefix_path.sh
-source;share/jetracer_bringup/environment/path.sh
+/home/timi/ros2_ws/build/jetracer_bringup/ament_cmake_environment_hooks/local_setup.dsv
