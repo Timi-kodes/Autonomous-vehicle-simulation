@@ -1,6 +1,6 @@
 set(_AMENT_PACKAGE_NAME "jetracer_description")
 set(jetracer_description_VERSION "0.0.0")
-set(jetracer_description_MAINTAINER "timi <timi@todo.todo>")
+set(jetracer_description_MAINTAINER "timi <joshuatimi39@gmail.com>")
 set(jetracer_description_BUILD_DEPENDS )
 set(jetracer_description_BUILDTOOL_DEPENDS "ament_cmake")
 set(jetracer_description_BUILD_EXPORT_DEPENDS )

@@ -1,4 +1,5 @@
 /home/timi/ros2_ws/install/jetracer_bringup/share/jetracer_bringup//launch/jetracer_gazebo.launch.xml
+/home/timi/ros2_ws/install/jetracer_bringup/share/jetracer_bringup//config/gazebo_bridge.yaml
 /home/timi/ros2_ws/install/jetracer_bringup/share/ament_index/resource_index/package_run_dependencies/jetracer_bringup
 /home/timi/ros2_ws/install/jetracer_bringup/share/ament_index/resource_index/parent_prefix_path/jetracer_bringup
 /home/timi/ros2_ws/install/jetracer_bringup/share/jetracer_bringup/environment/ament_prefix_path.sh

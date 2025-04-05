@@ -310,8 +310,8 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(DIRECTORY "urdf" "launch" "DESTINATION" "share/jetracer_description")
-ament_cmake_symlink_install_directory("/home/timi/ros2_ws/src/jetracer_description" DIRECTORY "urdf" "launch" "DESTINATION" "share/jetracer_description")
+# install(DIRECTORY "urdf" "launch" "rviz" "DESTINATION" "share/jetracer_description")
+ament_cmake_symlink_install_directory("/home/timi/ros2_ws/src/jetracer_description" DIRECTORY "urdf" "launch" "rviz" "DESTINATION" "share/jetracer_description")
 
 # install(FILES "/home/timi/ros2_ws/build/jetracer_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/jetracer_description" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/timi/ros2_ws/src/jetracer_description" FILES "/home/timi/ros2_ws/build/jetracer_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/jetracer_description" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

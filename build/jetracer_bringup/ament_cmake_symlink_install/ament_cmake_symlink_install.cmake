@@ -310,8 +310,8 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(DIRECTORY "launch" "DESTINATION" "share/jetracer_bringup/")
-ament_cmake_symlink_install_directory("/home/timi/ros2_ws/src/jetracer_bringup" DIRECTORY "launch" "DESTINATION" "share/jetracer_bringup/")
+# install(DIRECTORY "launch" "config" "DESTINATION" "share/jetracer_bringup/")
+ament_cmake_symlink_install_directory("/home/timi/ros2_ws/src/jetracer_bringup" DIRECTORY "launch" "config" "DESTINATION" "share/jetracer_bringup/")
 
 # install(FILES "/home/timi/ros2_ws/build/jetracer_bringup/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/jetracer_bringup" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/timi/ros2_ws/src/jetracer_bringup" FILES "/home/timi/ros2_ws/build/jetracer_bringup/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/jetracer_bringup" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
