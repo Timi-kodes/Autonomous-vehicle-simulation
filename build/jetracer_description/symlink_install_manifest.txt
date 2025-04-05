@@ -1,8 +1,9 @@
 /home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/urdf/common_properties.xacro
-/home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/urdf/jetracer.urdf.xacro
+/home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/urdf/jetracer.xacro
 /home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/urdf/jetracer_gazebo.xacro
 /home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/launch/display.launch.py
 /home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/launch/display.launch.xml
+/home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/rviz/jetracer.rviz
 /home/timi/ros2_ws/install/jetracer_description/share/ament_index/resource_index/package_run_dependencies/jetracer_description
 /home/timi/ros2_ws/install/jetracer_description/share/ament_index/resource_index/parent_prefix_path/jetracer_description
 /home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/environment/ament_prefix_path.sh
