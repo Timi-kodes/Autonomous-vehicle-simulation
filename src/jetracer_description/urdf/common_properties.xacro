@@ -26,16 +26,16 @@
         </inertial>
     </xacro:macro>
     
-    <xacro:macro name="cylinder_inertial" params="m radius length o_xyz o_rpy">
+    <xacro:macro name="cylinder_inertial" params="m r l o_xyz o_rpy">
         <inertial>
             <mass value="${m}"/>
             <origin xyz="${o_xyz}" rpy="${o_rpy}"/>
-            <inertia ixx="${m/12.0*(3*radius*radius + length*length)}"
+            <inertia ixx="${m/12.0*(3*r*r + l*l)}"
                      ixy="0"
                      ixz="0"
-                     iyy="${m/12.0*(3*radius*radius + length*length)}"
+                     iyy="${m/12.0*(3*r*r + l*l)}"
                      iyz="0"
-                     izz="${m*radius*radius/2.0}"/>
+                     izz="${m*r*r/2.0}"/>
         </inertial>
     </xacro:macro>
     

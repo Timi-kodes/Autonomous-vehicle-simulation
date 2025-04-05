@@ -1,0 +1,6 @@
+Invoking command in '/home/timi/ros2_ws/build/jetracer_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/timi/ros2_ws/src/jetracer_bringup -DCMAKE_INSTALL_PREFIX=/home/timi/ros2_ws/install/jetracer_bringup
+Invoked command in '/home/timi/ros2_ws/build/jetracer_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/timi/ros2_ws/src/jetracer_bringup -DCMAKE_INSTALL_PREFIX=/home/timi/ros2_ws/install/jetracer_bringup
+Invoking command in '/home/timi/ros2_ws/build/jetracer_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/timi/ros2_ws/build/jetracer_bringup -- -j20 -l20
+Invoked command in '/home/timi/ros2_ws/build/jetracer_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/timi/ros2_ws/build/jetracer_bringup -- -j20 -l20
+Invoking command in '/home/timi/ros2_ws/build/jetracer_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/timi/ros2_ws/build/jetracer_bringup
+Invoked command in '/home/timi/ros2_ws/build/jetracer_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/timi/ros2_ws/build/jetracer_bringup
