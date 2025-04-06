@@ -9,6 +9,8 @@
     
     <xacro:include filename= "common_properties.xacro"/>
     <xacro:include filename="jetracer_gazebo.xacro"/>  
+    <xacro:include filename="camera.xacro"/>
+    <xacro:include filename="lidar.xacro"/>
     
 
     <xacro:macro name="wheel" params="position side sign">
@@ -65,56 +67,7 @@
         <xacro:box_inertial m="1.2" x="${base_length}" y="${base_width}" z="${base_height}" o_xyz="0 0 0" o_rpy="0 0 0"/>
     </link>
 
-    <joint name="base_scan_joint" type="fixed">
-        <parent link="base_link"/>
-        <child link="base_scan"/>
-        <origin xyz="0 0 0.07" rpy="0 0 0"/>
-    </joint>
 
-    <link name="base_scan">
-        <visual>
-            <geometry>
-                <cylinder r="0.05" l="0.04"/>
-            </geometry>
-            <origin xyz="0 0 0" rpy="0 0 0"/>
-            <material name="grey" />
-        </visual>
-        <collision>
-            <geometry>
-                <cylinder r="0.05" l="0.04"/>
-            </geometry>
-            <origin xyz="0 0 0" rpy="0 0 0"/>
-        </collision>
-        <xacro:cylinder_inertial m="0.1" r="0.05" l="0.04" o_xyz="0 0 0" o_rpy="0 0 0"/>
-    </link>
-    
-
-
-    <link name="camera">
-	  <visual>
-	    <geometry> 
-	      <box size="0.03 0.03 0.013"/>
-	    </geometry>
-	     <origin xyz="0 0 0" rpy="0 0 0" />
-	    <material name="grey"/>	     
-	  </visual>
-      <collision>
-        <geometry> 
-          <box size="0.03 0.03 0.013"/>
-        </geometry>
-         <origin xyz="0 0 0" rpy="0 0 0" />
-      </collision>
-      <xacro:box_inertial m="0.1" x="0.03" y="0.03" z="0.013" o_xyz="0 0 0" o_rpy="0 0 0"/>
-    </link>
-
-
-   <joint name="camera_joint" type="fixed">
-	  <parent link="base_link"/>
-	  <child link="camera"/>
-	  <origin xyz="0.13 0 0.045" rpy="0 0 0"/>
-   </joint>
-
-    
     <xacro:wheel position="front" side="left" sign="1"/>
     
     
