@@ -1,0 +1,29 @@
+[0.006s] Invoking command in '/home/timi/ros2_ws/build/jetracer_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/timi/ros2_ws/build/jetracer_description -- -j20 -l20
+[0.031s] Invoked command in '/home/timi/ros2_ws/build/jetracer_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/timi/ros2_ws/build/jetracer_description -- -j20 -l20
+[0.039s] Invoking command in '/home/timi/ros2_ws/build/jetracer_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/timi/ros2_ws/build/jetracer_description
+[0.044s] -- Install configuration: ""
+[0.044s] -- Execute custom install script
+[0.045s] -- Up-to-date symlink: /home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/urdf/camera.xacro
+[0.045s] -- Up-to-date symlink: /home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/urdf/common_properties.xacro
+[0.045s] -- Up-to-date symlink: /home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/urdf/jetracer.urdf.xacro
+[0.045s] -- Up-to-date symlink: /home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/urdf/jetracer_gazebo.xacro
+[0.045s] -- Up-to-date symlink: /home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/urdf/lidar.xacro
+[0.046s] -- Up-to-date symlink: /home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/launch/display.launch.py
+[0.046s] -- Up-to-date symlink: /home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/launch/display.launch.xml
+[0.046s] -- Up-to-date symlink: /home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/rviz/jetracer.rviz
+[0.046s] -- Up-to-date symlink: /home/timi/ros2_ws/install/jetracer_description/share/ament_index/resource_index/package_run_dependencies/jetracer_description
+[0.046s] -- Up-to-date symlink: /home/timi/ros2_ws/install/jetracer_description/share/ament_index/resource_index/parent_prefix_path/jetracer_description
+[0.047s] -- Up-to-date symlink: /home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/environment/ament_prefix_path.sh
+[0.047s] -- Up-to-date symlink: /home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/environment/ament_prefix_path.dsv
+[0.047s] -- Up-to-date symlink: /home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/environment/path.sh
+[0.047s] -- Up-to-date symlink: /home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/environment/path.dsv
+[0.047s] -- Up-to-date symlink: /home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/local_setup.bash
+[0.047s] -- Up-to-date symlink: /home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/local_setup.sh
+[0.047s] -- Up-to-date symlink: /home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/local_setup.zsh
+[0.047s] -- Up-to-date symlink: /home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/local_setup.dsv
+[0.047s] -- Symlinking: /home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/package.dsv
+[0.054s] -- Up-to-date symlink: /home/timi/ros2_ws/install/jetracer_description/share/ament_index/resource_index/packages/jetracer_description
+[0.054s] -- Up-to-date symlink: /home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/cmake/jetracer_descriptionConfig.cmake
+[0.054s] -- Up-to-date symlink: /home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/cmake/jetracer_descriptionConfig-version.cmake
+[0.054s] -- Up-to-date symlink: /home/timi/ros2_ws/install/jetracer_description/share/jetracer_description/package.xml
+[0.064s] Invoked command in '/home/timi/ros2_ws/build/jetracer_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/timi/ros2_ws/build/jetracer_description
