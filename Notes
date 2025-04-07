@@ -1,0 +1,8 @@
+Running slam cmd: 
+ros2 launch slam_toolbox online_async_launch.py slam_pramas_file:=./src/jetracer_bringup/config/mapper_params_online_async.yaml
+
+Running launch file:
+colcon build --symlink-install && ros2 launch jetracer_bringup jetracer_gazebo.launch.xml
+
+
+https://app.gazebosim.org/omgupta113/fuel/worlds/tugbot_warehouse

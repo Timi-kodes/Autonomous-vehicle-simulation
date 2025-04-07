@@ -1,7 +1,9 @@
 /home/timi/ros2_ws/install/jetracer_bringup/share/jetracer_bringup//launch/jetracer_gazebo.launch.xml
 /home/timi/ros2_ws/install/jetracer_bringup/share/jetracer_bringup//config/gazebo_bridge.yaml
 /home/timi/ros2_ws/install/jetracer_bringup/share/jetracer_bringup//config/mapper_params_online_async.yaml
+/home/timi/ros2_ws/install/jetracer_bringup/share/jetracer_bringup//worlds/custom_world.sdf
 /home/timi/ros2_ws/install/jetracer_bringup/share/jetracer_bringup//worlds/jetracer_world.sdf
+/home/timi/ros2_ws/install/jetracer_bringup/share/jetracer_bringup//worlds/tugbot_warehouse.sdf
 /home/timi/ros2_ws/install/jetracer_bringup/share/ament_index/resource_index/package_run_dependencies/jetracer_bringup
 /home/timi/ros2_ws/install/jetracer_bringup/share/ament_index/resource_index/parent_prefix_path/jetracer_bringup
 /home/timi/ros2_ws/install/jetracer_bringup/share/jetracer_bringup/environment/ament_prefix_path.sh
