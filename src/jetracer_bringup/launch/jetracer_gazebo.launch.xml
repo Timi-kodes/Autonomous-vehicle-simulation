@@ -10,6 +10,9 @@
 
     <let name="slam_config_path"
         value="$(find-pkg-share jetracer_bringup)/config/mapper_params_online_async.yaml"/>
+    
+    <let name="nav2_config_path"
+        value="$(find-pkg-share jetracer_bringup)/config/nav2_params.yaml"/>
 
     <node pkg="robot_state_publisher" exec="robot_state_publisher" output="screen">
         <param name="robot_description"
@@ -22,9 +25,13 @@
          <!-- <arg name="gz_args" value="empty.sdf -r"/> -->
     </include>
 
-    <!-- <include file="$(find-pkg-share slam_toolbox)/launch/online_async_launch.py" >
-    <arg name="slam_pramas_file" value="$(var slam_config_path)"/>
-</include> -->
+    <!-- <timer period="8.0">
+    <include file="$(find-pkg-share nav2_bringup)/launch/bringup_launch.py">
+      <arg name="params_file" value="$(var nav2_config_path)"/>
+      <arg name="map"         value="$(find-pkg-share jetracer_bringup)/maps/warehouse_map.yaml"/>
+    </include>
+  </timer> -->
+
  
     <node pkg="ros_gz_sim" exec="create" args="-topic robot_description" output="screen"/>
 

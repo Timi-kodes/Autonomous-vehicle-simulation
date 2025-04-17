@@ -1,63 +1,56 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-
     <link name="base_scan">
         <visual>
             <geometry>
-                <cylinder radius="0.05" length="0.04"/>
+                <cylinder radius="${0.05 * scale}" length="${0.035 * scale}"/>
             </geometry>
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <material name="black" />
         </visual>
         <collision>
             <geometry>
-                <cylinder radius="0.05" length="0.04"/>
+                <cylinder radius="${0.05 * scale}" length="${0.035 * scale}"/>
             </geometry>
             <origin xyz="0 0 0" rpy="0 0 0"/>
         </collision>
-        <xacro:cylinder_inertial m="0.1" r="0.05" l="0.04" o_xyz="0 0 0" o_rpy="0 0 0"/>
+        
+        <xacro:cylinder_inertial m="${0.1 * scale}" r="${0.05 * scale}" l="${0.035 * scale}" o_xyz="0 0 0" o_rpy="0 0 0"/>
     </link>
     
-     <joint name="base_scan_joint" type="fixed">
+    <joint name="base_scan_joint" type="fixed">
         <parent link="base_link"/>
         <child link="base_scan"/>
-        <origin xyz="0 0 0.07" rpy="0 0 0"/>
+        
+        <origin xyz="0 0 ${base_height/2.5 + 0.02*scale}" rpy="0 0 0"/>
     </joint>
 
     <gazebo reference="base_scan">
         <sensor name="base_scan" type="gpu_lidar">
-            <pose>0 0 0 0 0 0</pose>
+            <!-- move up by half the cylinder length (0.04*scale/2 = 0.02*scale) -->
+            <pose relative_to="base_scan">0 0 ${0.025*scale} 0 0 0</pose>
             <topic>scan</topic>
-             
             <update_rate>10</update_rate>
             <ray>
                 <scan>
                     <horizontal>
                         <samples>640</samples>
                         <resolution>1</resolution>
-                        <min_angle>-1.396263</min_angle>
-                        <max_angle>1.396263</max_angle>
+                        <min_angle>-3.14</min_angle>
+                        <max_angle>3.14</max_angle>
                     </horizontal>
-                    <vertical>
-                        <samples>1</samples>
-                        <resolution>0.01</resolution>
-                        <min_angle>0</min_angle>
-                        <max_angle>0</max_angle>
-                    </vertical>
+                 
                 </scan>
                 <range>
                     <min>0.08</min>
-                    <max>10</max>
+                    <max>15</max>
                     <resolution>0.01</resolution>
-                
-            </range>
+                </range>
             </ray>
             <gz_frame_id>base_scan</gz_frame_id>
             <always_on>1</always_on>
             <visualize>true</visualize>
         </sensor>
     </gazebo>
-  
-
- </robot>
+</robot>

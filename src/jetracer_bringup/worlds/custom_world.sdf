@@ -10,6 +10,109 @@
     <plugin name='gz::sim::systems::UserCommands' filename='gz-sim-user-commands-system'/>
     <plugin name='gz::sim::systems::SceneBroadcaster' filename='gz-sim-scene-broadcaster-system'/>
     <plugin name='gz::sim::systems::Contact' filename='gz-sim-contact-system'/>
+
+       <plugin 
+        filename="gz-sim-triggered-publisher-system"
+        name="gz::sim::systems::TriggeredPublisher">
+        <input type="gz.msgs.Int32" topic="/keyboard/keypress">
+            <match field="data">16777235</match>
+        </input>
+        <output type="gz.msgs.Twist" topic="/cmd_vel">
+            <linear>
+                <x>0.5</x>
+                <y>0.0</y>
+                <z>0.0</z>
+            </linear>
+            <angular>
+                <x>0.0</x>
+                <y>0.0</y>
+                <z>0.0</z>
+            </angular>
+        </output>
+    </plugin>
+
+    <plugin 
+        filename="gz-sim-triggered-publisher-system"
+        name="gz::sim::systems::TriggeredPublisher">
+        <input type="gz.msgs.Int32" topic="/keyboard/keypress">
+            <match field="data">16777237</match>
+        </input>
+        <output type="gz.msgs.Twist" topic="/cmd_vel">
+            <linear>
+                <x>-0.5</x>
+                <y>0.0</y>
+                <z>0.0</z>
+            </linear>
+            <angular>
+                <x>0.0</x>
+                <y>0.0</y>
+                <z>0.0</z>
+            </angular>
+        </output>
+    </plugin>
+
+
+    <plugin 
+        filename="gz-sim-triggered-publisher-system"
+        name="gz::sim::systems::TriggeredPublisher">
+        <input type="gz.msgs.Int32" topic="/keyboard/keypress">
+            <match field="data">16777236</match>
+        </input>
+        <output type="gz.msgs.Twist" topic="/cmd_vel">
+            <linear>
+                <x>0.0</x>
+                <y>0.0</y>
+                <z>0.0</z>
+            </linear>
+            <angular>
+                <x>0.0</x>
+                <y>0.0</y>
+                <z>-0.5</z>
+            </angular>
+        </output>
+    </plugin>
+
+    <plugin 
+        filename="gz-sim-triggered-publisher-system"
+        name="gz::sim::systems::TriggeredPublisher">
+        <input type="gz.msgs.Int32" topic="/keyboard/keypress">
+            <match field="data">16777235</match>
+        </input>
+        <output type="gz.msgs.Twist" topic="/cmd_vel">
+            <linear>
+                <x>0.0</x>
+                <y>0.0</y>
+                <z>0.0</z>
+            </linear>
+            <angular>
+                <x>0.0</x>
+                <y>0.0</y>
+                <z>0.5</z>
+            </angular>
+        </output>
+    </plugin>
+
+    <plugin
+      filename="gz-sim-triggered-publisher-system"
+      name="gz::sim::systems::TriggeredPublisher">
+    <publisher>
+      <topic>/cmd_vel</topic>
+      <type>gz.msgs.Twist</type>
+      <ignition>
+        <linear>
+          <x>1.0</x>
+        </linear>
+      </ignition>
+      <trigger>
+        <topic>/keyboard/keypress</topic>
+        <type>gz.msgs.Int32</type>
+        <data>87</data> <!-- ASCII code for 'W' key -->
+      </trigger>
+    </publisher>
+    <!-- Add additional publisher-trigger pairs as needed -->
+  </plugin>
+    
+
     <scene>
       <ambient>1 1 1 1</ambient>
       <background>0.3 0.7 0.9 1</background>
