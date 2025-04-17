@@ -1,8 +1,20 @@
 Running slam cmd: 
-ros2 launch slam_toolbox online_async_launch.py slam_pramas_file:=./src/jetracer_bringup/config/mapper_params_online_async.yaml
+ros2 launch slam_toolbox online_async_launch.py slam_pramas_file:=./src/jetracer_bringup/config/mapper_params_online_async.yaml use_sim_time:=True
 
 Running launch file:
-colcon build --symlink-install && ros2 launch jetracer_bringup jetracer_gazebo.launch.xml
+colcon build --symlink-install && ros2 launch jetracer_bringup jetracer_gazebo.launch.xml 
 
 
-https://app.gazebosim.org/omgupta113/fuel/worlds/tugbot_warehouse
+https://app.gazebosim.org/omgupta113/fuel/worlds/tugbot_warehouse          
+https://articulatedrobotics.xyz/tutorials/ready-for-ros/gazebo#sim-time
+
+ros2 run teleop_twist_keyboard teleop_twist_keyboard \
+  --linear  0.7  \   # min forward speed
+  --angular 0.2     # lower angular gain
+  
+  
+  ros2 launch nav2_bringup bringup_launch.py use_sim_time:=True map:=maps/warehouse_map.yaml params_file:=config/nav2_params.yaml
+
+
+  
+  
