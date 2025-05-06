@@ -12,7 +12,7 @@ def generate_launch_description():
     robot_description = ParameterValue(Command(['xacro ', urdf_path]), value_type=str)
 
     return LaunchDescription([
-        # Declare the robot state publisher node
+        
         Node(
             package='robot_state_publisher',
             executable='robot_state_publisher',
@@ -20,7 +20,7 @@ def generate_launch_description():
             parameters=[{'robot_description': robot_description}],      
         ),
 
-        # Declare the RViz node
+        
         Node(
             package='rviz2',
             executable='rviz2',
@@ -29,7 +29,7 @@ def generate_launch_description():
             output='screen'
         ),
 
-        # Declare the joint state publisher GUI node
+        
         Node(
             package="joint_state_publisher_gui",
             executable="joint_state_publisher_gui",          

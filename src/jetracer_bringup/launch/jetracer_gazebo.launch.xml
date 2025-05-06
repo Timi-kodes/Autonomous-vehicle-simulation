@@ -22,20 +22,10 @@
     
     <include file="$(find-pkg-share ros_gz_sim)/launch/gz_sim.launch.py">
         <arg name="gz_args" value="$(find-pkg-share jetracer_bringup)/worlds/custom_world.sdf -r"/>
-         <!-- <arg name="gz_args" value="empty.sdf -r"/> -->
     </include>
-
-    <!-- <timer period="8.0">
-    <include file="$(find-pkg-share nav2_bringup)/launch/bringup_launch.py">
-      <arg name="params_file" value="$(var nav2_config_path)"/>
-      <arg name="map"         value="$(find-pkg-share jetracer_bringup)/maps/warehouse_map.yaml"/>
-    </include>
-  </timer> -->
 
  
     <node pkg="ros_gz_sim" exec="create" args="-topic robot_description" output="screen"/>
-
- 
 
 
     <node pkg="ros_gz_bridge" exec="parameter_bridge" output="screen">

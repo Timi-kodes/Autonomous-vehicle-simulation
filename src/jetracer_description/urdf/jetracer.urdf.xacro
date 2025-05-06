@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <robot name="jetracer" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-     <xacro:property name="scale" value="3"/>
+     <xacro:property name="scale" value="1.5"/>
      <xacro:property name="wheel_offset_frac" value="0.25"/>
 
    <xacro:property name="base_length" value="${0.2499 * scale}"/>
@@ -23,11 +23,9 @@
             <link name="${position}_${side}_steer_link">
                 <xacro:cylinder_inertial m="0.3" r="${wheel_radius}" l="${wheel_length}" o_xyz="0 0 0" o_rpy="${pi/2.0} 0 0"/>
               </link>
-            <!-- 1) steering joint -->
             <joint name="${position}_${side}_steer_joint" type="revolute">
                 <parent link="base_link"/>
                 <child  link="${position}_${side}_steer_link"/>
-                <!-- position at same x,y,z as wheel -->
                 <origin xyz="${
                     base_length/2.4
                 } ${
@@ -38,8 +36,7 @@
             </joint>
 
            
-
-            <!-- 2) then the rolling wheel joint, parented to the steer_link -->
+            
             <joint name="${position}_${side}_wheel_joint" type="continuous">
                 <parent link="${position}_${side}_steer_link"/>
                 <child  link="${position}_${side}_wheel"/>
@@ -66,7 +63,7 @@
         </xacro:if>
 
         <xacro:if value="${position!='front'}">
-            <!-- rear wheels unchanged -->
+            
             <joint name="${position}_${side}_wheel_joint" type="continuous">
                 <parent link="base_link"/>
                 <child  link="${position}_${side}_wheel"/>
@@ -120,12 +117,7 @@
             <origin xyz="0 0 0" rpy="0 0 0" />
         </collision>
         <xacro:box_inertial m="1.2" x="${base_length}" y="${base_width}" z="${base_height}" o_xyz="0 0 0" o_rpy="0 0 0"/>
-        <sensor name="imu_sensor" type="imu">
-            <always_on>1</always_on>
-            <update_rate>1</update_rate>
-            <visualize>true</visualize>
-            <topic>imu</topic>
-        </sensor>
+        
     </link>
 
 

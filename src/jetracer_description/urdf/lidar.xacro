@@ -28,7 +28,7 @@
 
     <gazebo reference="base_scan">
         <sensor name="base_scan" type="gpu_lidar">
-            <!-- move up by half the cylinder length (0.04*scale/2 = 0.02*scale) -->
+            
             <pose relative_to="base_scan">0 0 ${0.025*scale} 0 0 0</pose>
             <topic>scan</topic>
             <update_rate>10</update_rate>

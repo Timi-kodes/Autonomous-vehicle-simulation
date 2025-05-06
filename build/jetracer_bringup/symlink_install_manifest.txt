@@ -5,9 +5,7 @@
 /home/timi/ros2_ws/install/jetracer_bringup/share/jetracer_bringup//config/nav2_params.yaml
 /home/timi/ros2_ws/install/jetracer_bringup/share/jetracer_bringup//worlds/custom_world.sdf
 /home/timi/ros2_ws/install/jetracer_bringup/share/jetracer_bringup//worlds/jetracer_world.sdf
-/home/timi/ros2_ws/install/jetracer_bringup/share/jetracer_bringup//maps/my_house.pgm
-/home/timi/ros2_ws/install/jetracer_bringup/share/jetracer_bringup//maps/my_house.yaml
-/home/timi/ros2_ws/install/jetracer_bringup/share/jetracer_bringup//maps/new_warehouse_map.pgm
+/home/timi/ros2_ws/install/jetracer_bringup/share/jetracer_bringup//worlds/world.sdf
 /home/timi/ros2_ws/install/jetracer_bringup/share/jetracer_bringup//maps/warehouse_map.pgm
 /home/timi/ros2_ws/install/jetracer_bringup/share/jetracer_bringup//maps/warehouse_map.yaml
 /home/timi/ros2_ws/install/jetracer_bringup/share/ament_index/resource_index/package_run_dependencies/jetracer_bringup
