@@ -15,14 +15,14 @@
             </geometry>
             <origin xyz="0 0 0" rpy="0 0 0" />
         </collision>
-        <!-- Scale mass by scale^3 -->
+        
         <xacro:box_inertial m="${0.1 * scale * scale * scale}" x="${0.03 * scale}" y="${0.03 * scale}" z="${0.013 * scale}" o_xyz="0 0 0" o_rpy="0 0 0"/>
     </link>
 
     <joint name="camera_joint" type="fixed">
         <parent link="base_link"/>
         <child link="camera"/>
-        <!-- Scale xyz positions -->
+        
         <origin xyz="${0.12 * scale} 0 ${0.015 * scale}" rpy="0 0 0"/>
     </joint>
 
