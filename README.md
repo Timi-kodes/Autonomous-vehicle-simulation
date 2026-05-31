@@ -1,8 +1,3 @@
-I checked the repo structure. It looks like a ROS 2 workspace with two main packages: `jetracer_description` for the robot model/URDF/RViz setup, and `jetracer_bringup` for Gazebo simulation launch/configuration. The repo currently has no description, and the main source folders include `jetracer_bringup`, `jetracer_description`, URDF/Xacro files, RViz config, Gazebo bridge config, and a Gazebo world file. ([GitHub][1]) ([GitHub][2]) ([GitHub][3])
-
-Here is a clean README you can paste into `README.md`:
-
-````md
 # Autonomous Vehicle Simulation
 
 A ROS 2 autonomous vehicle simulation project based on a JetRacer-style vehicle model.  
